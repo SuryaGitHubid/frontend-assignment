@@ -1,39 +1,159 @@
-
-        /* Navigation Bar Styles*/
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: rgb(39, 77, 51);
-            padding: 18px;
-        }
-
-        nav a {
-            color: black;
-            text-decoration: rgb(255, 222, 173);
-        }
-
-        
-        section2 {
-            margin-left: 100px;
-            margin-top: 100px;
-            display: inline;
-            width: 100px;
-
-    
-        }
-
-        
-        div{
-        background-color:rgb(212, 102, 102);
-        height: 180px;
-        width:380px;
-        margin-left: 600px;
-        margin-top: 0px;
-        padding-top: 30px;
-        color: black;
-
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-       
+
+body{
+    background: linear-gradient(90deg,rgba(238, 223, 10, 0.616),rgba(214, 40, 136, 0.589) )
+}
+
+ul{
+    background-color: tomato;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+li{ 
+    list-style: none;
+    padding: 5px;
+}
+
+ul img{
+    width:30px;
+    height: 30px;
+    margin-left: -80px;
+}
+
+.home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.leftPanel{
+    margin:10% 5% 0% 5%;
+}
+
+.leftPanel h1{
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 10px;
+    padding-top: 100px;
+}
+
+.leftPanel p{
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+.leftPanel button{
+    padding: 10px 70px;
+    background-color: rgb(223, 30, 46);
+    border: 0;
+    font-size: 1.1rem;
+    margin: 10% 0%;
+}
+
+.leftPanel a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.leftPanel a:visited{
+    text-decoration: none;
+    color: white;
+}
+.leftPanel a:hover{
+    text-decoration: none;
+    color: white;
+}
+.leftPanel a:active{
+    text-decoration: none;
+    color: white;
+}
+
+.rightPanel img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.secondPage{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+.secondPage .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondPage .imgContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.secondPage .left .item-1{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.secondPage .left .item-2{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.secondPage .left .item-3{
+    width: 300px;
+    height: 420px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.secondPage .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 41, 41);
+    margin: 180px 100px
+}
+
+.secondPage .right p{
+    align-self: flex-start;
+    font-size: 1.3rem;
+    margin: 20px;
     
+}
 
 
+.secondPage .right h1{
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 10px;
+    margin-left:20px;
+}
+
+
+.secondPage .right button{
+    background-color: rgb(230, 41, 41);
+    border: 0px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.right button img{
+    margin-left: 10px;
+}
